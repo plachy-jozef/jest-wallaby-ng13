@@ -85,23 +85,6 @@
           "options": {
             "browserTarget": "ng-jest-wallaby:build"
           }
-        },
-        "test": {
-          "builder": "@angular-builders/jest:run",
-          "options": {
-            "main": "src/jest-global-mocks.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          }
         }
       }
     }

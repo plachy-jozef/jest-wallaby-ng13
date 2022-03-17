@@ -1,11 +1,14 @@
 // Assuming that your global setup file is setup-jest.ts
 // import 'jest-preset-angular/setup-jest';
 // import './jest-global-mocks';
+import 'rxjs';
 
 Object.defineProperty(window, 'CSS', { value: null });
+
 Object.defineProperty(document, 'doctype', {
   value: '<!DOCTYPE html>',
 });
+
 Object.defineProperty(window, 'getComputedStyle', {
   value: () => {
     return {
